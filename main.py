@@ -6,8 +6,10 @@ load_dotenv()
 
 
 mcp = FastMCP()
-API_KEY=-os.environ.get('MCP_API_KEY')
-
+API_KEY = os.environ.get('MCP_API_KEY')
+print('*' * 100)
+print(API_KEY)
+print('*' * 100)
 
 @mcp.tool
 def sum(a: float, b: float):
